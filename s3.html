@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://www.baidu.com/s" method="GET">
+        <input type="text" name="wd" maxlength="100" autocomplete="off">
+        <input type="submit" value="提交"/>
+        
+    </form>
+    <hr />
+    <form action="http://www.sogou.com/web" enctype="multipart/form-data">
+        <!--这个网站默认使用的是get方式，提交的时候会把提交至写到url里面，所以可以使用此方式提交上去-->
+        <input type="text" name="user" />
+        <input type="password" name="pwd" />
+        
+        male<input type="radio" name="gender" value="1" />
+        female<input type="radio" name="gender" value="0"/>
+        <p>
+            篮球<input name="favor" type="checkbox" value="0"/>
+            足球<input name="favor" type="checkbox" value="1"/>
+            排球<input name="favor" type="checkbox" value="2"/>
+            网球<input name="favor" type="checkbox" value="3"/>
+            乒乓球<input name="favor" type="checkbox" value="4"/>
+        </p>
+        <p>文件:<input type="file" name="document"></p>
+        <p>
+            <select name="city">
+                <option value="1">上海</option>
+                <option value="2">北京</option>
+                <option value="3">广州</option>
+              
+            </select>
+        </p>
+
+        <p>备注:<textarea name="ttt"></textarea></p>
+        <input type="submit" value="搜索"/>
+    </form>
+</body>
+</html>
